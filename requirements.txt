@@ -5,7 +5,7 @@ lxml==3.4.4
 pysftp==0.2.8
 xmltodict==0.10.1
 beautifulsoup4==4.4.1
-celery==3.1.23
+celery==4.4.2
 django-celery==3.1.17
 pdfkit==0.6.1
 pyPDF2==1.26.0
