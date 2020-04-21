@@ -6,7 +6,9 @@ pysftp==0.2.9
 xmltodict==0.12.0
 beautifulsoup4==4.9.0
 celery==4.4.2
-django-celery==3.3.1
+redis==3.4.1
+django-celery-beat==2.0.0
+django-celery-results==1.2.1
 pdfkit==0.6.1
 pyPDF2==1.26.0
 pdfrw==0.4
