@@ -17,7 +17,7 @@ contextlib2==0.6.0.post1
 cryptography==1.8.1
 dealer==2.0.5
 decorator==4.0.11
-Django==1.11.29
+Django==3.0.5
 django-appconf==1.0.2
 django-celery-beat==1.6.0
 django-celery-results==1.2.1
