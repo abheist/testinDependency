@@ -11,7 +11,7 @@ pdfkit==0.5.0
 pyPDF2==1.26.0
 pdfrw==0.3
 reportlab==3.3.0
-django-tz-detect==0.2.7
+django-tz-detect==0.3.0
 phonenumbers==7.5.2
 python-magic==0.4.12
 django-compressor==2.1
