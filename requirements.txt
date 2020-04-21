@@ -9,7 +9,7 @@ celery==3.1.23
 django-celery==3.1.17
 pdfkit==0.5.0
 pyPDF2==1.26.0
-pdfrw==0.3
+pdfrw==0.4
 reportlab==3.3.0
 django-tz-detect==0.2.7
 phonenumbers==7.5.2
