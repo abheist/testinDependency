@@ -1,7 +1,7 @@
 Django==1.11
 pytz==2017.2
 django-environ==0.4.0
-lxml==3.4.4
+lxml==4.5.0
 pysftp==0.2.8
 xmltodict==0.10.1
 beautifulsoup4==4.4.1
