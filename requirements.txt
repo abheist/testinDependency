@@ -5,7 +5,7 @@ asn1crypto==0.22.0
 autopep8==1.5
 backports-abc==0.5
 backports.shutil-get-terminal-size==1.0.0
-beautifulsoup4==4.4.1
+beautifulsoup4==4.9.0
 billiard==3.6.3.0
 celery==4.4.2
 certifi==2019.11.28
