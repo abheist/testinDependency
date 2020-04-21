@@ -1,4 +1,4 @@
-Django==1.11
+Django==1.11.28
 pytz==2017.2
 django-environ==0.4.0
 lxml==3.4.4
