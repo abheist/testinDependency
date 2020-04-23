@@ -32,8 +32,8 @@ kombu==4.6.8
 lxml==3.4.4
 olefile==0.46
 packaging==16.8
+pathlib2==2.3.5
 paramiko==2.7.1
-pathlib2==2.2.1
 pdfkit==0.6.1
 pdfrw==0.3
 phonenumbers==8.12.1
