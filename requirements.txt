@@ -29,7 +29,7 @@ ipdb==0.8.1
 ipython==5.3.0
 ipython-genutils==0.2.0
 kombu==3.0.37
-lxml==3.4.4
+lxml==4.5.0
 olefile==0.44
 packaging==16.8
 paramiko==2.1.2
