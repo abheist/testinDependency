@@ -11,13 +11,12 @@ cffi==1.14.0
 chardet==3.0.4
 cryptography==2.9.2
 dealer==2.0.5
-Django==1.11.29
+Django==2.2.12
 django-tz-detect==0.3.0
 django-debug-toolbar==2.2
 django-compressor==2.4
 django-appconf==1.0.4
 decorator==4.4.2
-django-celery==3.3.1
 django-cors-headers==3.2.1
 django-extensions==2.2.9
 django-environ==0.4.5
@@ -54,7 +53,7 @@ pytz==2019.3
 rcssmin==1.0.6
 reportlab==3.5.42
 requests==2.23.0
-rjsmin==1.0.12
+rjsmin==1.1.0
 scandir==1.10.0
 simplegeneric==0.8.1
 sqlparse==0.3.1
