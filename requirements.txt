@@ -44,8 +44,8 @@ prompt-toolkit==3.0.5
 ptyprocess==0.5.1
 pyasn1==0.4.8
 pycparser==2.17
+pyOpenSSL==19.1.0
 pygments==2.6.1
-pyOpenSSL==19.0.0
 pyparsing==2.4.7
 pyPDF2==1.26.0
 python-magic==0.4.15
