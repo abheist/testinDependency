@@ -22,8 +22,8 @@ django-environ==0.4.5
 django-extensions==1.6.1
 django-modeltranslation==0.15
 django-tz-detect==0.2.7
+idna==2.9
 enum34==1.1.10
-idna==2.5
 ipaddress==1.0.23
 ipdb==0.8.1
 ipython==7.13.0
