@@ -17,7 +17,7 @@ django-appconf==1.0.2
 django-celery==3.1.17
 django-compressor==2.1
 django-cors-headers==3.0.2
-django-debug-toolbar==1.5
+django-debug-toolbar==2.2
 django-environ==0.4.0
 django-extensions==1.6.1
 django-modeltranslation==0.12.1
