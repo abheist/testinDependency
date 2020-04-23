@@ -46,7 +46,7 @@ pyasn1==0.2.3
 pycparser==2.17
 pygments==2.2.0
 pyOpenSSL==19.0.0
-pyparsing==2.2.0
+pyparsing==2.4.7
 pyPDF2==1.26.0
 pysftp==0.2.9
 python-magic==0.4.12
