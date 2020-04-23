@@ -12,6 +12,7 @@ chardet==3.0.4
 cryptography==2.9.2
 dealer==2.0.5
 Django==1.11.29
+django-tz-detect==0.3.0
 django-debug-toolbar==2.2
 django-compressor==2.4
 django-appconf==1.0.4
@@ -21,7 +22,6 @@ django-cors-headers==3.2.1
 django-extensions==2.2.9
 django-environ==0.4.5
 django-modeltranslation==0.15
-django-tz-detect==0.2.7
 ipdb==0.13.2
 idna==2.9
 enum34==1.1.10
