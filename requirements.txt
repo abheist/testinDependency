@@ -5,7 +5,7 @@ asn1crypto==0.22.0
 backports.shutil-get-terminal-size==1.0.0
 beautifulsoup4==4.4.1
 billiard==3.3.0.23
-celery==3.1.23
+celery==4.4.2
 certifi==2019.6.16
 cffi==1.14.0
 chardet==3.0.4
