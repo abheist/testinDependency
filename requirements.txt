@@ -11,7 +11,7 @@ cffi==1.14.0
 chardet==3.0.4
 cryptography==2.9.2
 dealer==2.0.5
-Django==1.11.29
+Django==3.0.5
 django-debug-toolbar==2.2
 django-compressor==2.4
 django-appconf==1.0.4
