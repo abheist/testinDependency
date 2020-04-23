@@ -57,7 +57,7 @@ requests==2.22.0
 rjsmin==1.0.12
 scandir==1.5
 simplegeneric==0.8.1
-six==1.10.0
+six==1.14.0
 sqlparse==0.2.1
 traitlets==4.3.2
 urllib3==1.25.3
