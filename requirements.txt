@@ -52,7 +52,7 @@ pysftp==0.2.9
 python-magic==0.4.12
 pytz==2019.3
 rcssmin==1.0.6
-reportlab==3.3.0
+reportlab==3.5.42
 requests==2.23.0
 rjsmin==1.0.12
 scandir==1.10.0
