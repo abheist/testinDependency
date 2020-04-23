@@ -1,0 +1,187 @@
+# Steps to upgrade python and Django
+
+*Current python2 packages installed are:*
+```
+amqp==1.4.9
+anyjson==0.3.3
+appdirs==1.4.3
+asn1crypto==0.22.0
+backports.shutil-get-terminal-size==1.0.0
+beautifulsoup4==4.4.1
+billiard==3.3.0.23
+celery==3.1.23
+certifi==2019.6.16
+cffi==1.10.0
+chardet==3.0.4
+cryptography==2.7
+dealer==2.0.5
+decorator==4.0.11
+Django==1.11.29
+django-appconf==1.0.2
+django-celery==3.1.17
+django-compressor==2.1
+django-cors-headers==3.0.2
+django-debug-toolbar==1.5
+django-environ==0.4.0
+django-extensions==1.6.1
+django-modeltranslation==0.12.1
+django-tz-detect==0.2.7
+enum34==1.1.6
+idna==2.5
+ipaddress==1.0.18
+ipdb==0.8.1
+ipython==5.3.0
+ipython-genutils==0.2.0
+kumbu==3.0.37
+lxml==3.4.4
+olefile==0.44
+packaging==16.8
+paramiko==2.1.2
+pathlib2==2.2.1
+pdfkit==0.5.0
+pdfrw==0.3
+pexpect==4.2.1
+phonenumers==7.5.2
+pickleshare==0.7.4
+pillow==4.1.0
+prompt-toolkit==1.0.14
+psycopg2==2.6.1
+ptyprocess==0.5.1
+pyasn1==0.2.3
+pycparser==2.17
+pygments==2.2.0
+pyOpenSSL==19.0.0
+pyparsing==2.2.0
+pyPDF==1.26.0
+pysftp==0.2.8
+python-magic==0.4.12
+pytz==2017.2
+rcssmin==1.0.6
+reportlab==3.3.0
+requests==2.22.0
+rjsmin==1.0.12
+scandir==1.5
+simplegeneric==0.8.1
+six==1.10.0
+sqlparse==0.2.1
+traitlets==4.3.2
+urllib3==1.25.3
+uWSGI==2.0.11.2
+wcwidth==0.1.7
+wheel==0.24.0
+xlwt==1.3.0
+xmltodict==0.10.1
+```
+
+### Errors
+*psycopg2 giving error while installing*, removed it from installationg, will be replaced by new django *postgress* package
+```
+Collecting psycopg2==2.6.1
+  Using cached psycopg2-2.6.1.tar.gz (371 kB)
+    ERROR: Command errored out with exit status 1:
+     command: /Users/abhiest/.virtualenvs/testin2/bin/python -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-KoXXR6/psycopg2/setup.py'"'"'; __file__='"'"'/private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-KoXXR6/psycopg2/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-KoXXR6/psycopg2/pip-egg-info
+         cwd: /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-KoXXR6/psycopg2/
+    Complete output (14 lines):
+    running egg_info
+    creating /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-KoXXR6/psycopg2/pip-egg-info/psycopg2.egg-info
+    writing /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-KoXXR6/psycopg2/pip-egg-info/psycopg2.egg-info/PKG-INFO
+    writing top-level names to /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-KoXXR6/psycopg2/pip-egg-info/psycopg2.egg-info/top_level.txt
+    writing dependency_links to /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-KoXXR6/psycopg2/pip-egg-info/psycopg2.egg-info/dependency_links.txt
+    writing manifest file '/private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-KoXXR6/psycopg2/pip-egg-info/psycopg2.egg-info/SOURCES.txt'
+    Error: pg_config executable not found.
+
+    Please add the directory containing pg_config to the PATH
+    or specify the full executable path with the option:
+
+        python setup.py build_ext --pg-config /path/to/pg_config build ...
+
+    or with the pg_config option in 'setup.cfg'.
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+```
+
+
+*Error while installing uWSGI*: will check when deployment, don't need it in local
+```
+ Building wheel for uWSGI (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /Users/abhiest/.virtualenvs/testin2/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-EkLLph/uWSGI/setup.py'"'"'; __file__='"'"'/private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-EkLLph/uWSGI/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-wheel-SRcFSl
+       cwd: /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-EkLLph/uWSGI/
+  Complete output (33 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib
+  copying uwsgidecorators.py -> build/lib
+  installing to build/bdist.macosx-10.15-x86_64/wheel
+  running install
+  using profile: buildconf/default.ini
+  detected include path: ['/usr/local/include', '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include', '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include', '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include', '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks']
+  Patching "bin_name" to properly install_scripts dir
+  detected CPU cores: 12
+  configured CFLAGS: -O2 -I. -Wall -Werror -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fno-strict-aliasing -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DUWSGI_HAS_IFADDRS -DUWSGI_ZLIB -mmacosx-version-min=10.5 -DUWSGI_LOCK_USE_OSX_SPINLOCK -DUWSGI_EVENT_USE_KQUEUE -DUWSGI_EVENT_TIMER_USE_KQUEUE -DUWSGI_EVENT_FILEMONITOR_USE_KQUEUE -I/usr/local/Cellar/pcre/8.44/include -DUWSGI_PCRE -DUWSGI_ROUTING -DUWSGI_UUID -DUWSGI_VERSION="\"2.0.11.2\"" -DUWSGI_VERSION_BASE="2" -DUWSGI_VERSION_MAJOR="0" -DUWSGI_VERSION_MINOR="11" -DUWSGI_VERSION_REVISION="2" -DUWSGI_VERSION_CUSTOM="\"\"" -DUWSGI_YAML -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -DUWSGI_XML -DUWSGI_XML_LIBXML2 -DUWSGI_PLUGIN_DIR="\".\"" -DUWSGI_DECLARE_EMBEDDED_PLUGINS="UDEP(python);UDEP(gevent);UDEP(ping);UDEP(cache);UDEP(nagios);UDEP(rrdtool);UDEP(carbon);UDEP(rpc);UDEP(corerouter);UDEP(fastrouter);UDEP(http);UDEP(ugreen);UDEP(signal);UDEP(syslog);UDEP(rsyslog);UDEP(logsocket);UDEP(router_uwsgi);UDEP(router_redirect);UDEP(router_basicauth);UDEP(zergpool);UDEP(redislog);UDEP(mongodblog);UDEP(router_rewrite);UDEP(router_http);UDEP(logfile);UDEP(router_cache);UDEP(rawrouter);UDEP(router_static);UDEP(sslrouter);UDEP(spooler);UDEP(cheaper_busyness);UDEP(symcall);UDEP(transformation_tofile);UDEP(transformation_gzip);UDEP(transformation_chunked);UDEP(transformation_offload);UDEP(router_memcached);UDEP(router_redis);UDEP(router_hash);UDEP(router_expires);UDEP(router_metrics);UDEP(transformation_template);UDEP(stats_pusher_socket);" -DUWSGI_LOAD_EMBEDDED_PLUGINS="ULEP(python);ULEP(gevent);ULEP(ping);ULEP(cache);ULEP(nagios);ULEP(rrdtool);ULEP(carbon);ULEP(rpc);ULEP(corerouter);ULEP(fastrouter);ULEP(http);ULEP(ugreen);ULEP(signal);ULEP(syslog);ULEP(rsyslog);ULEP(logsocket);ULEP(router_uwsgi);ULEP(router_redirect);ULEP(router_basicauth);ULEP(zergpool);ULEP(redislog);ULEP(mongodblog);ULEP(router_rewrite);ULEP(router_http);ULEP(logfile);ULEP(router_cache);ULEP(rawrouter);ULEP(router_static);ULEP(sslrouter);ULEP(spooler);ULEP(cheaper_busyness);ULEP(symcall);ULEP(transformation_tofile);ULEP(transformation_gzip);ULEP(transformation_chunked);ULEP(transformation_offload);ULEP(router_memcached);ULEP(router_redis);ULEP(router_hash);ULEP(router_expires);ULEP(router_metrics);ULEP(transformation_template);ULEP(stats_pusher_socket);"
+  *** uWSGI compiling server core ***
+  [thread 2][cc] core/utils.o
+  [thread 1][cc] core/protocol.o
+  [thread 3][cc] core/socket.o
+  [thread 4][cc] core/logging.o
+  [thread 5][cc] core/master.o
+  [thread 6][cc] core/master_utils.o
+  [thread 8][cc] core/emperor.o
+  [thread 7][cc] core/notify.o
+  [thread 9][cc] core/mule.o
+  [thread 10][cc] core/subscription.o
+  [thread 11][cc] core/stats.o
+  [thread 0][cc] core/sendfile.o
+  core/utils.c:3866:18: error: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Werror,-Wvarargs]
+                                  va_start(ap, kv_separator);
+                                               ^
+  core/utils.c:3823:73: note: parameter of type 'char' is declared here
+  int uwsgi_kvlist_parse(char *src, size_t len, char list_separator, char kv_separator, ...) {
+                                                                          ^
+  1 error generated.
+  ----------------------------------------
+  ERROR: Failed building wheel for uWSGI
+  Running setup.py clean for uWSGI
+Successfully built scandir simplegeneric
+Failed to build uWSGI
+Installing collected packages: pyPDF2, six, pycparser, cffi, bcrypt, pynacl, enum34, ipaddress, cryptography, paramiko, pysftp, python-magic, pytz, rcssmin, pillow, reportlab, chardet, idna, urllib3, certifi, requests, rjsmin, scandir, simplegeneric, sqlparse, ipython-genutils, decorator, traitlets, uWSGI, wcwidth, wheel, xlwt, xmltodict
+    Running setup.py install for uWSGI ... error
+    ERROR: Command errored out with exit status 1:
+     command: /Users/abhiest/.virtualenvs/testin2/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-EkLLph/uWSGI/setup.py'"'"'; __file__='"'"'/private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-EkLLph/uWSGI/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-record-ntW_4T/install-record.txt --single-version-externally-managed --compile --install-headers /Users/abhiest/.virtualenvs/testin2/include/site/python2.7/uWSGI
+         cwd: /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-EkLLph/uWSGI/
+    Complete output (26 lines):
+    running install
+    using profile: buildconf/default.ini
+    detected include path: ['/usr/local/include', '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include', '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include', '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include', '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks']
+    Patching "bin_name" to properly install_scripts dir
+    detected CPU cores: 12
+    configured CFLAGS: -O2 -I. -Wall -Werror -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fno-strict-aliasing -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DUWSGI_HAS_IFADDRS -DUWSGI_ZLIB -mmacosx-version-min=10.5 -DUWSGI_LOCK_USE_OSX_SPINLOCK -DUWSGI_EVENT_USE_KQUEUE -DUWSGI_EVENT_TIMER_USE_KQUEUE -DUWSGI_EVENT_FILEMONITOR_USE_KQUEUE -I/usr/local/Cellar/pcre/8.44/include -DUWSGI_PCRE -DUWSGI_ROUTING -DUWSGI_UUID -DUWSGI_VERSION="\"2.0.11.2\"" -DUWSGI_VERSION_BASE="2" -DUWSGI_VERSION_MAJOR="0" -DUWSGI_VERSION_MINOR="11" -DUWSGI_VERSION_REVISION="2" -DUWSGI_VERSION_CUSTOM="\"\"" -DUWSGI_YAML -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -DUWSGI_XML -DUWSGI_XML_LIBXML2 -DUWSGI_PLUGIN_DIR="\".\"" -DUWSGI_DECLARE_EMBEDDED_PLUGINS="UDEP(python);UDEP(gevent);UDEP(ping);UDEP(cache);UDEP(nagios);UDEP(rrdtool);UDEP(carbon);UDEP(rpc);UDEP(corerouter);UDEP(fastrouter);UDEP(http);UDEP(ugreen);UDEP(signal);UDEP(syslog);UDEP(rsyslog);UDEP(logsocket);UDEP(router_uwsgi);UDEP(router_redirect);UDEP(router_basicauth);UDEP(zergpool);UDEP(redislog);UDEP(mongodblog);UDEP(router_rewrite);UDEP(router_http);UDEP(logfile);UDEP(router_cache);UDEP(rawrouter);UDEP(router_static);UDEP(sslrouter);UDEP(spooler);UDEP(cheaper_busyness);UDEP(symcall);UDEP(transformation_tofile);UDEP(transformation_gzip);UDEP(transformation_chunked);UDEP(transformation_offload);UDEP(router_memcached);UDEP(router_redis);UDEP(router_hash);UDEP(router_expires);UDEP(router_metrics);UDEP(transformation_template);UDEP(stats_pusher_socket);" -DUWSGI_LOAD_EMBEDDED_PLUGINS="ULEP(python);ULEP(gevent);ULEP(ping);ULEP(cache);ULEP(nagios);ULEP(rrdtool);ULEP(carbon);ULEP(rpc);ULEP(corerouter);ULEP(fastrouter);ULEP(http);ULEP(ugreen);ULEP(signal);ULEP(syslog);ULEP(rsyslog);ULEP(logsocket);ULEP(router_uwsgi);ULEP(router_redirect);ULEP(router_basicauth);ULEP(zergpool);ULEP(redislog);ULEP(mongodblog);ULEP(router_rewrite);ULEP(router_http);ULEP(logfile);ULEP(router_cache);ULEP(rawrouter);ULEP(router_static);ULEP(sslrouter);ULEP(spooler);ULEP(cheaper_busyness);ULEP(symcall);ULEP(transformation_tofile);ULEP(transformation_gzip);ULEP(transformation_chunked);ULEP(transformation_offload);ULEP(router_memcached);ULEP(router_redis);ULEP(router_hash);ULEP(router_expires);ULEP(router_metrics);ULEP(transformation_template);ULEP(stats_pusher_socket);"
+    *** uWSGI compiling server core ***
+    [thread 1][cc] core/utils.o
+    [thread 2][cc] core/protocol.o
+    [thread 3][cc] core/socket.o
+    [thread 4][cc] core/logging.o
+    [thread 5][cc] core/master.o
+    [thread 6][cc] core/master_utils.o
+    [thread 7][cc] core/emperor.o
+    [thread 8][cc] core/notify.o
+    [thread 9][cc] core/mule.o
+    [thread 10][cc] core/subscription.o
+    [thread 0][cc] core/sendfile.o
+    [thread 11][cc] core/stats.o
+    core/utils.c:3866:18: error: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Werror,-Wvarargs]
+                                    va_start(ap, kv_separator);
+                                                 ^
+    core/utils.c:3823:73: note: parameter of type 'char' is declared here
+    int uwsgi_kvlist_parse(char *src, size_t len, char list_separator, char kv_separator, ...) {
+                                                                            ^
+    1 error generated.
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /Users/abhiest/.virtualenvs/testin2/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-EkLLph/uWSGI/setup.py'"'"'; __file__='"'"'/private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-install-EkLLph/uWSGI/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/var/folders/16/xsjxx6yx46z3nlth4vlz_pzh0000gn/T/pip-record-ntW_4T/install-record.txt --single-version-externally-managed --compile --install-headers /Users/abhiest/.virtualenvs/testin2/include/site/python2.7/uWSGI Check the logs for full command output.
+```
+
+- Removed the above two dependecies from the requirement file, and they are now installing on the Mac.
+
+Now, I'll upgrade the versions of it.
