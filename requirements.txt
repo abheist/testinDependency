@@ -32,7 +32,7 @@ kombu==3.0.37
 lxml==3.4.4
 olefile==0.44
 packaging==16.8
-paramiko==2.1.2
+paramiko==2.1.6
 pathlib2==2.2.1
 pdfkit==0.5.0
 pdfrw==0.3
