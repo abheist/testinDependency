@@ -31,7 +31,7 @@ ipython-genutils==0.2.0
 kombu==3.0.37
 lxml==3.4.4
 olefile==0.44
-packaging==16.8
+packaging==20.3
 paramiko==2.1.2
 pathlib2==2.2.1
 pdfkit==0.5.0
