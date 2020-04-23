@@ -53,7 +53,7 @@ python-magic==0.4.12
 pytz==2017.2
 rcssmin==1.0.6
 reportlab==3.3.0
-requests==2.22.0
+requests==2.23.0
 rjsmin==1.0.12
 scandir==1.5
 simplegeneric==0.8.1
