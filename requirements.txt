@@ -28,10 +28,10 @@ enum34==1.1.10
 ipaddress==1.0.23
 ipython==7.13.0
 ipython-genutils==0.2.0
+packaging==20.3
 lxml==4.5.0
 kombu==4.6.8
 olefile==0.46
-packaging==16.8
 pdfrw==0.4
 pathlib2==2.3.5
 paramiko==2.7.1
