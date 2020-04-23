@@ -48,8 +48,8 @@ pygments==2.6.1
 pyOpenSSL==19.0.0
 pyparsing==2.4.7
 pyPDF2==1.26.0
+python-magic==0.4.15
 pysftp==0.2.9
-python-magic==0.4.12
 pytz==2019.3
 rcssmin==1.0.6
 reportlab==3.5.42
