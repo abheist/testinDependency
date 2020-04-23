@@ -55,7 +55,7 @@ rcssmin==1.0.6
 reportlab==3.3.0
 requests==2.22.0
 rjsmin==1.0.12
-scandir==1.5
+scandir==1.10.0
 simplegeneric==0.8.1
 six==1.14.0
 sqlparse==0.2.1
