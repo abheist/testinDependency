@@ -27,7 +27,7 @@ enum34==1.1.10
 ipaddress==1.0.23
 ipython==7.14.0
 ipython-genutils==0.2.0
-packaging==20.3
+packaging==20.4
 lxml==4.5.1
 kombu==4.6.8
 olefile==0.46
