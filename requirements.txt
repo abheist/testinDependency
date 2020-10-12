@@ -21,7 +21,7 @@ django-cors-headers==3.5.0
 django-extensions==3.0.9
 django-environ==0.4.5
 ipdb==0.13.3
-django-modeltranslation==0.15.2
+django-modeltranslation==0.16
 idna==2.10
 enum34==1.1.10
 ipaddress==1.0.23
