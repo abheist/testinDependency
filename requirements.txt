@@ -52,7 +52,7 @@ pysftp==0.2.9
 pytz==2020.1
 rcssmin==1.0.6
 requests==2.24.0
-reportlab==3.5.50
+reportlab==3.5.54
 rjsmin==1.1.0
 scandir==1.10.0
 simplegeneric==0.8.1
