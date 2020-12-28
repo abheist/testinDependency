@@ -39,7 +39,7 @@ phonenumbers==8.12.9
 pexpect==4.8.0
 pillow==7.2.0
 pickleshare==0.7.5
-ptyprocess==0.6.0
+ptyprocess==0.7.0
 prompt-toolkit==3.0.7
 pycparser==2.20
 pyasn1==0.4.8
