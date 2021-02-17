@@ -47,7 +47,7 @@ pyOpenSSL==19.1.0
 pygments==2.7.1
 pyparsing==2.4.7
 pyPDF2==1.26.0
-python-magic==0.4.18
+python-magic==0.4.22
 pysftp==0.2.9
 pytz==2020.1
 rcssmin==1.0.6
