@@ -57,7 +57,7 @@ rjsmin==1.1.0
 scandir==1.10.0
 simplegeneric==0.8.1
 sqlparse==0.3.1
-six==1.15.0
+six==1.16.0
 wcwidth==0.2.5
 traitlets==5.0.4
 urllib3==1.25.10
