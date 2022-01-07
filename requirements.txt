@@ -16,7 +16,7 @@ django-tz-detect==0.3.0
 django-debug-toolbar==3.1
 django-compressor==2.4
 django-appconf==1.0.4
-decorator==4.4.2
+decorator==5.1.1
 django-cors-headers==3.5.0
 django-extensions==3.0.9
 django-environ==0.4.5
