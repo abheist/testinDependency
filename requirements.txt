@@ -33,7 +33,7 @@ kombu==5.0.2
 olefile==0.46
 pdfrw==0.4
 pathlib2==2.3.5
-paramiko==2.7.2
+paramiko==2.9.2
 pdfkit==0.6.1
 phonenumbers==8.12.9
 pexpect==4.8.0
