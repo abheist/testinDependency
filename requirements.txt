@@ -37,7 +37,7 @@ paramiko==2.7.2
 pdfkit==0.6.1
 phonenumbers==8.12.9
 pexpect==4.8.0
-pillow==7.2.0
+pillow==9.1.1
 pickleshare==0.7.5
 ptyprocess==0.6.0
 prompt-toolkit==3.0.7
