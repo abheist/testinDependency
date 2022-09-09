@@ -35,7 +35,7 @@ pdfrw==0.4
 pathlib2==2.3.5
 paramiko==2.7.2
 pdfkit==0.6.1
-phonenumbers==8.12.9
+phonenumbers==8.12.55
 pexpect==4.8.0
 pillow==7.2.0
 pickleshare==0.7.5
