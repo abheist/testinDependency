@@ -22,7 +22,7 @@ django-extensions==3.0.9
 django-environ==0.4.5
 ipdb==0.13.3
 django-modeltranslation==0.15.2
-idna==2.10
+idna==3.4
 enum34==1.1.10
 ipaddress==1.0.23
 ipython==7.18.1
