@@ -30,7 +30,7 @@ ipython-genutils==0.2.0
 packaging==20.4
 lxml==4.5.2
 kombu==5.0.2
-olefile==0.46
+olefile==0.47
 pdfrw==0.4
 pathlib2==2.3.5
 paramiko==2.7.2
