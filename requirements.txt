@@ -28,7 +28,7 @@ ipaddress==1.0.23
 ipython==7.18.1
 ipython-genutils==0.2.0
 packaging==20.4
-lxml==4.5.2
+lxml==4.9.4
 kombu==5.0.2
 olefile==0.46
 pdfrw==0.4
